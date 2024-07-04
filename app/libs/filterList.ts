@@ -1,0 +1,1 @@
+export const filterList: string[] = ["Suggested", "Popular", "Oldest", "Newest", "A-Z", "Z-A"]
