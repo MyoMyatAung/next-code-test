@@ -20,7 +20,9 @@ const Header = () => {
         <header>
             <nav className={`flex ${genreSelected && 'bg-background-selected'} justify-between items-center text-sm text-gray-400 py-2 px-8`}>
                 <div className={`flex justify-evenly items-center gap-5 ${genreSelected && 'text-white'}`}>
-                    <Image src="https://beatpulse.co/wp-content/uploads/2022/10/Beatpulse-horizon-white-1.svg" alt='Logo' width={160} height={62} />
+                    <Link href="/">
+                        <Image src="https://beatpulse.co/wp-content/uploads/2022/10/Beatpulse-horizon-white-1.svg" alt='Logo' width={160} height={62} />
+                    </Link>
                     <Link href="/" className='font-semibold'>Beats</Link>
                     <Link href="/licensing">Licensing</Link>
                 </div>
