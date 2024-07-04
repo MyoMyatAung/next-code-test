@@ -5,6 +5,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { MdElectricBolt } from "react-icons/md";
 import { IoMdCart } from "react-icons/io";
 import { useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 
 const Header = () => {
     const searchParams = useSearchParams();
@@ -18,7 +19,8 @@ const Header = () => {
     return (
         <header>
             <nav className={`flex ${genreSelected && 'bg-background-selected'} justify-between items-center text-sm text-gray-400 py-2 px-8`}>
-                <div className={`flex justify-evenly items-center gap-4 ${genreSelected && 'text-white'}`}>
+                <div className={`flex justify-evenly items-center gap-5 ${genreSelected && 'text-white'}`}>
+                    <Image src="https://beatpulse.co/wp-content/uploads/2022/10/Beatpulse-horizon-white-1.svg" alt='Logo' width={160} height={62} />
                     <Link href="/" className='font-semibold'>Beats</Link>
                     <Link href="/licensing">Licensing</Link>
                 </div>
